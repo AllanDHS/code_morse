@@ -67,7 +67,7 @@ function sleep(ms) {
         document.getElementById("text").appendChild(result);
         }
         let tmp = textfield.value.toLowerCase();
-if(tmp.replaceAll('█','')=="azerty")
+if(tmp.replaceAll('█','')=="dieux")
 {
     document.getElementById('result').innerText="clé de déchiffrement trouvé !";
 }
