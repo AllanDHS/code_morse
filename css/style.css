@@ -79,7 +79,7 @@ div#exemple img {
        only screen and (min-device-width: 390px) and (max-device-width: 844px),
        only screen and (min-device-width: 428px) and (max-device-width: 926px),
        only screen and (min-device-width: 430px) and (max-device-width: 932px) {
-    body > * {
+    body {
         display: none; /* Cacher tout le contenu du body */
     }
 
