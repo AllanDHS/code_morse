@@ -83,17 +83,11 @@ div#exemple img {
         display: none; /* Cacher tout le contenu du body */
     }
 
-    body::before {
-        content: "Veuillez vous rendre sur un ordinateur pour accéder à ce site. url : https://allandhs.github.io/code_morse/";
-        display: block;
+    .message{
+        display: block; /* Afficher le message */
         text-align: center;
-        padding: 20px;
         font-size: 20px;
-        color: #fff;
-        background: #000;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: white;
+        margin-top: 50%;
     }
 }
