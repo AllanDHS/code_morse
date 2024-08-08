@@ -1,16 +1,12 @@
 body {
+    display: block;
     margin: 0;
-    position: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     font-family: 'Courier New', monospace;
     background-color: black;
     color: greenyellow;
-    display: block;
 }
 
 div.container {
-
     margin-left: 40%;
     display: flex;
     flex-direction: column;
@@ -23,7 +19,6 @@ h1 {
 }
 
 img.image_morse {
-
     margin-left: 50px;
     filter: invert(1);
     width: 80%;
@@ -67,26 +62,19 @@ div#exemple img {
     margin-left: 10px;
 }
 
+/* Message par défaut (caché) */
+.message {
+    display: none;
+}
 
-/* media query */
-
-/* Cacher le body et afficher un message pour les résolutions typiques des iPhones */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
-       only screen and (min-device-width: 375px) and (max-device-width: 667px),
-       only screen and (min-device-width: 414px) and (max-device-width: 736px),
-       only screen and (min-device-width: 375px) and (max-device-width: 812px),
-       only screen and (min-device-width: 414px) and (max-device-width: 896px),
-       only screen and (min-device-width: 390px) and (max-device-width: 844px),
-       only screen and (min-device-width: 428px) and (max-device-width: 926px),
-       only screen and (min-device-width: 430px) and (max-device-width: 932px) {
-    body {
-        display: none; /* Cacher tout le contenu du body */
+/* Media query pour les écrans de moins de 768px de largeur */
+@media (max-width: 768px) {
+    .morse {
+        display: none;
     }
 
-    .message{
-        display: block; /* Afficher le message */
+    .message {
+        display: block;
         text-align: center;
-        font-size: 20px;
-        color: white;
     }
 }
