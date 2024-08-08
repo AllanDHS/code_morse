@@ -75,9 +75,7 @@ div#exemple img {
 
     .message {
         display: block;
-        background-color: #f0f0f0;
         padding: 10px;
-        border: 1px solid #ccc;
         margin: 20px;
         text-align: center;
     }
