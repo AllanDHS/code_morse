@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    position: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: greenyellow;
+    display: block;
+}
+
+div.container {
+
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+}
+
+img.image_morse {
+
+    margin-left: 50px;
+    filter: invert(1);
+    width: 80%;
+    height: 100%;
+}
+
+div.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 125px;
+    width: 44%;
+    position: fixed;
+    align-items: center;
+}
+
+img#salut {
+    top: 25px;
+    width: 10%;
+    filter: invert(1);
+}
+
+img#secret {
+    margin-top: 25px;
+    width: 25%;
+    filter: invert(1);
+}
+
+div#indice:hover path {
+    stroke: white;
+}
+
+div#exemple {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+div#exemple img {
+    margin-left: 10px;
+}
+
+
+/* media query */
+
+/* Cacher le body et afficher un message pour les résolutions typiques des iPhones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+       only screen and (min-device-width: 375px) and (max-device-width: 667px),
+       only screen and (min-device-width: 414px) and (max-device-width: 736px),
+       only screen and (min-device-width: 375px) and (max-device-width: 812px),
+       only screen and (min-device-width: 414px) and (max-device-width: 896px),
+       only screen and (min-device-width: 390px) and (max-device-width: 844px),
+       only screen and (min-device-width: 428px) and (max-device-width: 926px),
+       only screen and (min-device-width: 430px) and (max-device-width: 932px) {
+    body > * {
+        display: none; /* Cacher tout le contenu du body */
+    }
+
+    body::before {
+        content: "Veuillez vous rendre sur un ordinateur pour accéder à ce site. url : https://allandhs.github.io/code_morse/";
+        display: block;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        color: #fff;
+        background: #000;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
